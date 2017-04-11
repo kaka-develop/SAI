@@ -1,0 +1,36 @@
+<div layout="column" layout-align="center center" class="m-detail">
+    <div layout-fill md-whiteframe="1">
+        <md-button ui-sref="help" class="md-raised md-primary">Back</md-button>
+
+        <div layout-gt-xs="row" class="m-settings-content">
+            <div flex-gt-xs>
+                <div layout="row" layout-align="center center">
+                    <md-icon class="material-icons black">volume_up</md-icon>
+                    <md-slider class="md-warn" flex md-discrete ng-model="vm.volume" step="1" min="1" max="10" aria-label="rating">
+                    </md-slider>
+                </div>
+                <div layout="row" layout-align="center center">
+                    <md-icon class="material-icons black">help_outline</md-icon>
+                    <md-select ng-model="vm.topic" aria-label="Language" flex>
+                        <md-option value="random" ng-selected="true">Random</md-option>
+                        <md-option value="sports">Sports</md-option>
+                        <md-option value="history">History</md-option>
+                    </md-select>
+                    <span flex="30"></span>
+                </div>
+            </div>
+            <div flex-gt-xs layout-gt-xs="column">
+                <span flex-gt-xs></span>
+                <div layout="row" layout-align="center center">
+                    <md-icon class="material-icons black">language</md-icon>
+                    <md-select ng-model="vm.lang" aria-label="Language" flex>
+                        <md-option value="en" ng-selected="true">English</md-option>
+                        <md-option value="vi">Vietnamese</md-option>
+                    </md-select>
+                    <span flex="30"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div layout="column" layout-gt-xs="row" layout-align="center center" class="m-play">
+    <div class="m-panel" md-whiteframe="2" layout="column" >
+        <span flex></span>
+        <span class="md-title">9. What is the special animal here ?</span>
+        <span flex></span>
+    </div>
+    <div class="m-answer" layout="column" layout-align="center center">
+        <md-button ng-click="vm.showWrongAnswer()" aria-label="A" class="md-raised md-primary m-answer-btn"> A. Fish </md-button>
+        <md-button aria-label="B" class="md-raised md-primary m-answer-btn"> B. Monkey </md-button>
+        <md-button ng-click="vm.showWrongAnswer()" aria-label="C" class="md-raised md-primary m-answer-btn"> C. Chicken </md-button>
+    </div>
+</div>
+<div ui-view="quicktool" ng-cloak></div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SAI Game</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="content/css/main-600.css">
+    <link rel="stylesheet" href="content/css/vendor.css">
+</head>
+
+<body ng-app="saiApp" ng-strict-di>
+    <div class="main-content" layout="column" flex>
+        <md-content flex>
+            <div layout="column">
+                <div ui-view="toolbar" ng-cloak></div>
+                <div ui-view="content" ng-cloak></div>
+            </div>
+        </md-content>
+    </div>
+
+    <!--Extra-->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+    <!--App-->
+    <script src="app/app.module.js"></script>
+    <script src="app/layouts/toolbar/toolbar.controller.js"></script>
+    <script src="app/layouts/toolbar/toolbar.service.js"></script>
+    <script src="app/layouts/quicktool/quicktool.controller.js"></script>
+    <script src="app/app.state.js"></script>
+    <script src="app/app.theme.js"></script>
+    <script src="app/home/home.state.js"></script>
+    <script src="app/home/home.controller.js"></script>
+    <script src="app/play/play.state.js"></script>
+    <script src="app/play/play.controller.js"></script>
+    <script src="app/help/help.state.js"></script>
+    <script src="app/help/help.controller.js"></script>
+    <script src="app/help/about/about.state.js"></script>
+    <script src="app/help/about/about.controller.js"></script>
+    <script src="app/help/tip/tip.state.js"></script>
+    <script src="app/help/tip/tip.controller.js"></script>
+    <script src="app/settings/settings.state.js"></script>
+    <script src="app/settings/settings.controller.js"></script>
+</body>
+
+</html>
